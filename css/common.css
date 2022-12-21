@@ -1,0 +1,457 @@
+/* 字体图标 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?2ql8sh');
+    src: url('../fonts/icomoon.eot?2ql8sh#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?2ql8sh') format('truetype'),
+        url('../fonts/icomoon.woff?2ql8sh') format('woff'),
+        url('../fonts/icomoon.svg?2ql8sh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+
+/* 顶部导航区域 */
+
+.centerBox {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#header {
+    height: 36px;
+    background: #2e2828;
+    /* min-width: 1200px; */
+}
+
+.h_inner {
+    height: 100%;
+}
+
+.h_inner .l_nav {
+    float: left;
+}
+
+.h_inner>ul>li {
+    position: relative;
+    float: left;
+    padding: 0 8px;
+    color: #afafaf;
+    line-height: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.h_inner li .bg {
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background: #414141;
+    right: 0;
+    top: 13px;
+}
+
+.h_inner .l_nav li a {
+    color: #afafaf;
+}
+
+.h_inner li a i {
+    vertical-align: middle;
+}
+
+.h_inner li a:hover {
+    color: #fff;
+}
+
+.h_inner .l_nav li:nth-child(1) {
+    padding-left: 0;
+}
+
+.h_inner .s_down .b {
+    display: none;
+    position: absolute;
+    top: 36px;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 36px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 8px 0 8px 8px;
+    z-index: 10;
+    width: 119px;
+    padding: 6px 0 12px 0;
+    text-align: center;
+    line-height: 32px;
+}
+
+.h_inner .s_down .b ul li a {
+    color: #777;
+}
+
+.h_inner .s_down .b ul li a:hover {
+    color: #ca141d;
+}
+
+.h_inner .r_nav {
+    float: right;
+}
+
+.h_inner .r_nav .lif .sliderDown {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 36px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 8px 0 8px 8px;
+    z-index: 10;
+    width: 78px;
+    color: #afafaf;
+    padding: 6px 0 12px 0;
+    text-align: center;
+    line-height: 32px;
+    display: none;
+}
+
+.h_inner .r_nav .lif .sliderDown:hover {
+    color: #ca141d;
+}
+
+.h_inner .r_nav .cart {
+    height: 36px;
+    background: #424242;
+}
+
+.h_inner .r_nav .cart .empty {
+    width: 460px;
+    padding: 50px 0 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #a4a4a4;
+}
+
+.h_inner .r_nav .cart .empty .p1 i {
+    display: block;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    background: #f3f3f3;
+    border-radius: 50%;
+    line-height: 100px;
+    font-size: 50px;
+}
+
+.h_inner .r_nav li a {
+    color: #afafaf;
+}
+
+.h_inner .r_nav li a:hover {
+    color: #fff;
+}
+
+/* 主导航 */
+#main_nav {
+    height: 75px;
+    background-color: #fff;
+}
+
+#main_nav .centerBox {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+#main_nav .logo {
+    width: 103px;
+    margin-right: 75px;
+}
+
+#main_nav .logo h1 {
+    width: 100%;
+    height: 100%;
+}
+
+#main_nav .logo h1 a {
+    display: block;
+    width: 103px;
+    height: 100%;
+    font-size: 0;
+    background: url(https://res.vmallres.com/portal/1.22.10.300/h5/images/logo_app.png);
+    background-size: 100%;
+}
+
+#main_nav .navText {
+    display: flex;
+    align-items: center;
+}
+
+#main_nav .navText li {
+    margin-right: 35px;
+}
+
+#main_nav .navText a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+#main_nav a:hover {
+    color: #cf0a2c;
+    cursor: pointer;
+}
+
+.icon-search:before {
+    font-family: 'icomoon';
+    content: "\e986";
+    font-size: 25px;
+    color: #a3a3a3;
+    line-height: 75px;
+    margin-left: 270px;
+}
+
+.icon-search {
+    cursor: pointer;
+}
+
+.footer {
+    position: relative;
+}
+
+/* 底部横栏区域  */
+.bottomBar {
+    height: 120px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.bottomBar .centerBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottomBar .centerBox li {
+    display: flex;
+    align-items: center;
+}
+
+.bottomBar .centerBox li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.bottomBar .centerBox li span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+/* 底部导航区域 */
+
+.bottomNav {
+    height: 310px;
+    background-color: #fff;
+}
+
+.bottomNav .centerBox {
+    display: flex;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 40px;
+}
+
+.bottomNav .centerBox .leftBox {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+}
+
+.bottomNav .centerBox .leftBox dl dt {
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    margin: 60px 0 25px;
+}
+
+.bottomNav .centerBox .leftBox dl dd {
+    margin-top: 10px;
+}
+
+.bottomNav .centerBox .leftBox dl dd:hover {
+    color: #cf0a2c;
+    cursor: pointer;
+}
+
+.bottomNav .centerBox .rightBox {
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.bottomNav .centerBox .rightBox section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    border-left: 1px solid #f2f2f2;
+}
+
+.bottomNav .centerBox .rightBox section h2 {
+    font-size: 22px;
+    color: #191919;
+    font-weight: 700;
+}
+
+.bottomNav .centerBox .rightBox section em {
+    font-size: 12px;
+    color: #191919;
+    font-weight: 700;
+}
+
+.icon-phone-call:before {
+    font-family: 'icomoon';
+    content: "\e942";
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.bottomNav .centerBox .rightBox section .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 34px;
+    background-color: #191919;
+    border-radius: 17px;
+    color: #fff;
+    font-weight: 700;
+    margin: 18px 0;
+}
+
+.bottomNav .centerBox .rightBox section .contact:hover {
+    background: #666666;
+}
+
+.bottomNav .centerBox .rightBox section .contact:active {
+    background: #191919;
+}
+
+.bottomNav .centerBox .rightBox section .attention {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #191919;
+    font-weight: 700;
+}
+
+.icon-wechat:before {
+    font-family: 'icomoon';
+    content: "\e901";
+    color: #312f30;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.icon-baidu:before {
+    font-family: 'icomoon';
+    content: "\e900";
+    color: #312f30;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.icon-sina-weibo:before {
+    font-family: 'icomoon';
+    content: "\ea9a";
+    color: #312f30;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+
+/* 底部版权区域 */
+
+.copyright {
+    height: 150px;
+    background-color: #fff;
+}
+
+.copyright .centerBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.copyright .centerBox .footer-logo,
+.copyright .centerBox .police {
+    display: block;
+    width: 82px;
+    height: 50px;
+    background: url(https://warehouse-1309123434.cos.ap-chengdu.myqcloud.com/huawei/VMALL/10075.png) no-repeat;
+    background-size: 100%;
+    margin-right: 30px;
+}
+
+.copyright .centerBox .fl {
+    position: absolute;
+    left: 100px;
+}
+
+.copyright .centerBox .fl ul {
+    display: flex;
+    margin: 5px 0;
+}
+
+.copyright .centerBox .fl ul li::after {
+    content: '|';
+    color: #e5e5e5;
+    margin: 0 5px;
+}
+
+.copyright .centerBox .fl ul li:last-child::after {
+    content: '';
+    color: #e5e5e5;
+}
+
+.copyright .centerBox .fl ul:nth-child(1) li a {
+    font-size: 13px;
+}
+
+.copyright .centerBox .fl ul:nth-child(n+2) li,
+.copyright .centerBox .fl ul:nth-child(n+2) li a {
+    color: #999;
+}
+
+.copyright .centerBox .fl ul:nth-child(n+2) li a:hover {
+    color: #cf0a2c;
+    cursor: pointer;
+}
+
+.copyright .centerBox .police {
+    width: 92px;
+    height: auto;
+    background: url(https://warehouse-1309123434.cos.ap-chengdu.myqcloud.com/huawei/VMALL/police.png) no-repeat;
+    margin-right: 0;
+}
+
+
+/* 回到顶部 */
+.scroll-btn {
+    position: fixed;
+    right: 100px;
+    bottom: 150px;
+    width: 42px;
+    height: 62px;
+    background-color: transparent;
+    /* display: none; */
+    background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/visual/top-icon.png);
+    background-size: 100% 100%;
+    z-index: 100;
+    cursor: pointer;
+}

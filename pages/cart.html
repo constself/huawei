@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>购物车</title>
+    <link
+      rel="icon"
+      href="https://warehouse-1309123434.cos.ap-chengdu.myqcloud.com/huawei/VMALL/10086.ico"
+    />
+    <!-- 引入重置样式 -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="../css/common.css" />
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="../css/iconfont-mall.css" />
+    <!-- 引入mall样式 -->
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+  <body>
+    <!-- 顶部导航区域 start-->
+    <section id="header">
+      <div class="centerBox h_inner">
+        <ul class="l_nav">
+          <li>
+            <a href="./index.html">首页</a>
+            <span class="bg"></span>
+          </li>
+          <li>
+            <a href="./index.html">华为官网</a>
+            <span class="bg"></span>
+          </li>
+          <li>
+            <a href="#">荣耀官网</a>
+            <span class="bg"></span>
+          </li>
+          <li>
+            <a href="#">花粉俱乐部</a>
+            <span class="bg"></span>
+          </li>
+          <li>
+            <a href="#">V码(优购码)</a>
+            <span class="bg"></span>
+          </li>
+          <li>
+            <a href="#">企业购</a>
+            <span class="bg"></span>
+          </li>
+          <li>
+            <a href="javascript:;">Select Region</a>
+            <span class="bg"></span>
+          </li>
+          <li class="s_down">
+            <a href="javascript:;"
+              >更多精彩 <i class="iconfont icon-shangxiajiantou"></i
+            ></a>
+            <div class="b">
+              <ul>
+                <li>
+                  <a href="#">HarmonyOS</a>
+                </li>
+                <li>
+                  <a href="#">应用市场</a>
+                </li>
+                <li>
+                  <a href="#">华为终端云空间</a>
+                </li>
+                <li>
+                  <a href="#">开发者联盟</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="r_nav">
+          <li class="lif">
+            <a href="./login.html">请登录</a> &nbsp;<a href="./register.html"
+              >注册</a
+            >
+            <span class="bg"></span>
+            <!-- <div class="sliderDown">退出登录</div> -->
+          </li>
+          <li>
+            <a href="#">我的订单</a>
+            <span class="bg"></span>
+          </li>
+          <li class="s_down">
+            <a href="#"
+              >客户服务 <i class="iconfont icon-shangxiajiantou"></i
+            ></a>
+            <span class="bg"></span>
+            <div class="b" style="width: 84px">
+              <ul>
+                <li>
+                  <a href="#">服务中心</a>
+                </li>
+                <li>
+                  <a href="#">联系客服</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+              >网站导航 <i class="iconfont icon-shangxiajiantou"></i
+            ></a>
+            <span class="bg"></span>
+          </li>
+          <li>
+            <a href="#">手机版 <i class="iconfont icon-shangxiajiantou"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 顶部导航区域 end-->
+
+    <!-- top区域  start-->
+    <section id="top">
+      <div class="centerBox top">
+        <div class="left">
+          <div class="logo">
+            <a href="./mall.html" title="华为商城">
+              <img
+                src="https://res4.vmallres.com/shopdc//pic/20211013/4f15c00a-24fc-4782-a825-5af7c9a98ae2.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <span>我的购物车</span>
+        </div>
+        <div class="right">
+          <div class="mycurt"></div>
+        </div>
+      </div>
+    </section>
+    <!-- top区域  end-->
+
+    <!-- 主体部分 start -->
+    <section id="main">
+      <div class="centerBox m_inner">
+        <div class="h20"></div>
+        <div class="empty">
+          <div class="icon">
+            <img
+              src="https://warehouse-1309123434.cos.ap-chengdu.myqcloud.com/huawei/VMALL/icon-header-minicart.32e5f81.png"
+              alt=""
+            />
+          </div>
+          <p class="123">您的购物车里什么也没有哦~</p>
+          <a href="./mall.html">去逛逛</a>
+        </div>
+        <div class="products">
+          <div class="pro-top">
+            <div class="pro-top-left"><span class="checkAll"></span>全选</div>
+            <ul class="clearfix">
+              <li style="width: 450px; margin-left: 0; text-align: left">
+                商品
+              </li>
+              <li>单价</li>
+              <li>数量</li>
+              <li>小计</li>
+              <li>操作</li>
+            </ul>
+          </div>
+          <div class="pro-warp">
+            <!-- <div class="pro-list">
+              <div class="pro-list-left">
+                <span class="checkThis"></span>
+              </div>
+              <div class="pro-main">
+                <div class="pro-img">
+                  <a href="#">
+                    <img
+                      src="https://res.vmallres.com/pimages//product/6901443415908/428_428_129AFEFAE8375F761A9E08DC132A53F306027824EA772535mp.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <ul class="clearfix">
+                  <li style="width: 450px">
+                    <a href="#" class="pro-title"
+                      >HUAWEI Mate 30E Pro 5G 全网通 8GB+256GB（翡冷翠）</a
+                    >
+                    <p class="pro-info">翡冷翠 5G全网通 8GB+256GB 官方标配</p>
+                    <div class="p-label">
+                      <span>分期免息</span>
+                    </div>
+                  </li>
+                  <li
+                    style="width: 140px; margin-left: 10px; margin-right: -20px"
+                  >
+                    <div class="pro-price">
+                      <span>￥ 5799.00</span>
+                    </div>
+                  </li>
+                  <li style="width: 100px; margin-left: 30px">
+                    <div class="pro-stock">
+                      <input type="number" id="num" value="1" />
+                      <span class="stock-btn">
+                        <a href="javascript:;" class="cut">−</a>
+                        <a href="javascript:;" class="add">+</a>
+                      </span>
+                    </div>
+                  </li>
+                  <li class="pro-total" style="margin-left: 30px; width: 100px">
+                    ￥ 5799.00
+                  </li>
+                  <li style="margin-left: 30px; width: 100px">
+                    <a href="javascript:;" class="pro-del">删除</a>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+          <div class="pro-bottom">
+            <div class="left">
+              <span class="checkAll"></span>全选
+              <span class="del">删除</span>
+            </div>
+            <div class="btn">立即结算</div>
+            <div class="allPrice">
+              <p>
+                <em>总计：</em> <span class="total-price">¥&nbsp; 0.00</span
+                ><i></i>
+              </p>
+              <div class="choose">
+                已选择 <span class="number">0</span>件商品，优惠：<span
+                  class="preferential"
+                  >¥&nbsp;0.00</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 主体部分 end -->
+
+    <!-- 底部区域 -->
+    <footer class="footer">
+      <!-- 底部横栏区域 -->
+      <div class="bottomBar">
+        <ul class="centerBox">
+          <li>
+            <img
+              src="https://warehouse-1309123434.cos.ap-chengdu.myqcloud.com/huawei/VMALL/10001.png"
+              alt=""
+            />
+            <span>百强企业 品质保证</span>
+          </li>
+          <li>
+            <img
+              src="https://warehouse-1309123434.cos.ap-chengdu.myqcloud.com/huawei/VMALL/100003.png"
+              alt=""
+            />
+            <span>7天退货 15天换货</span>
+          </li>
+          <li>
+            <img
+              src="https://warehouse-1309123434.cos.ap-chengdu.myqcloud.com/huawei/VMALL/100005.png"
+              alt=""
+            />
+            <span>48元起免运费</span>
+          </li>
+          <li>
+            <img
+              src="https://warehouse-1309123434.cos.ap-chengdu.myqcloud.com/huawei/VMALL/100006.png"
+              alt=""
+            />
+            <span>2000家服务店 全国联保</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 底部导航区域 -->
+      <div class="bottomNav">
+        <div class="centerBox">
+          <div class="leftBox">
+            <dl>
+              <dt>购物指南</dt>
+              <dd>免息分期</dd>
+              <dd>以旧换新</dd>
+              <dd>众测活动</dd>
+              <dd>企业购</dd>
+              <dd>O2O采购</dd>
+            </dl>
+            <dl>
+              <dt>售后服务</dt>
+              <dd>门店维修</dd>
+              <dd>保修政策</dd>
+              <dd>防伪查询</dd>
+              <dd>退换货政策</dd>
+              <dd>手机寄修服务</dd>
+              <dd>维修备件价格查询</dd>
+            </dl>
+            <dl>
+              <dt>维修与技术支持</dt>
+              <dd>服务店</dd>
+              <dd>预约维修</dd>
+              <dd>手机寄修</dd>
+              <dd>备件价格查询</dd>
+              <dd>上门服务</dd>
+            </dl>
+            <dl>
+              <dt>特色服务</dt>
+              <dd>防伪查询</dd>
+              <dd>补购保障</dd>
+              <dd>以旧换新</dd>
+              <dd>礼品包装</dd>
+            </dl>
+            <dl>
+              <dt>关于我们</dt>
+              <dd>公司介绍</dd>
+              <dd>华为零售店</dd>
+              <dd>商家中心</dd>
+              <dd>意见反馈</dd>
+            </dl>
+            <dl>
+              <dt>友情链接</dt>
+              <dd>华为集团</dd>
+              <dd>华为CBG官网</dd>
+              <dd>花粉俱乐部</dd>
+              <dd>华为云</dd>
+              <dd>华为应用市场</dd>
+              <dd>华为心声社区</dd>
+            </dl>
+          </div>
+          <div class="rightBox">
+            <section>
+              <h2>950805</h2>
+              <em>7 x 24 小时客服热线 (仅收市话费)</em>
+              <div class="contact">
+                <span class="icon-phone-call"></span>
+                <span>在线客服</span>
+              </div>
+              <div class="attention">
+                <span>关注VMALL:</span>
+                <span class="icon-wechat"></span>
+                <span class="icon-sina-weibo"></span>
+                <span class="icon-baidu"></span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!-- 底部区域 -->
+      <div class="copyright">
+        <div class="centerBox">
+          <a href="JavaScript:;" class="footer-logo"></a>
+          <div class="fl">
+            <ul>
+              <li>
+                <a href="JavaScript:;">华为集团</a>
+              </li>
+              <li>
+                <a href="JavaScript:;">华为CBG官网</a>
+              </li>
+              <li>
+                <a href="JavaScript:;">花粉俱乐部</a>
+              </li>
+              <li>
+                <a href="JavaScript:;">华为应用市场</a>
+              </li>
+              <li>
+                <a href="JavaScript:;">HarmonyOS</a>
+              </li>
+              <li>
+                <a href="JavaScript:;">华为终端云空间</a>
+              </li>
+              <li>
+                <a href="JavaScript:;">开发者联盟</a>
+              </li>
+              <li>
+                <a href="JavaScript:;">华为商城手机版</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="JavaScript:;">隐私声明</a>
+              </li>
+              <li>
+                <a href="JavaScript:;">服务协议</a>
+              </li>
+              <li>
+                <a href="JavaScript:;">COOKIES</a> Copyright © 2012-2022
+                华为终端有限公司 版权所有
+              </li>
+              <li>
+                <a href="JavaScript:;">经营资质</a>
+              </li>
+              <li>
+                <a href="JavaScript:;"> 粤ICP备19015064号</a>
+              </li>
+              <li>
+                <a href="JavaScript:;"> 粤公网安备 44190002003939号</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="JavaScript:;">增值电信业务经营许可证:粤B2-20190762</a>
+              </li>
+              <li>
+                <a href="JavaScript:;">备案主体编号:44201919072182</a>
+              </li>
+              <li>
+                <a href="JavaScript:;">粤新出网备(2021)2号</a>
+              </li>
+              <li>
+                <a href="JavaScript:;">（粤）网械平台备字[2022]第00005号</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="JavaScript:;"
+                  >互联网药品信息服务资格证（粤）-非经营性-2020-0102</a
+                >
+              </li>
+              <li>
+                <a href="JavaScript:;">粤东食药监械经营备20203930</a>
+              </li>
+              <li>
+                <a href="JavaScript:;"
+                  >广东省网络食品交易第三方平台备案:GDWS10168</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="JavaScript:;" class="police"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="../json/cart.js"></script>
+<script src="../libs/jquery-3.6.0.js"></script>
+<script src="../js/cart.js"></script>

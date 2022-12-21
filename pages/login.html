@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录</title>
+
+    <!-- icon -->
+    <link
+      rel="icon"
+      href="https://warehouse-1309123434.cos.ap-chengdu.myqcloud.com/huawei/VMALL/10086.ico"
+    />
+    <!-- 引入重置样式 -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="../css/iconfont.css" />
+    <!-- 引入登录样式 -->
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <!-- 头部 start -->
+    <section id="header">
+      <div class="h_inner centerBox">
+        <a href="./index.html">
+          <div class="logo">
+            <img
+              src="https://warehouse-1309123434.cos.ap-chengdu.myqcloud.com/huawei/VMALL/10001.svg"
+              alt=""
+            />
+          </div>
+          <div class="webname">
+            <span class="line"></span>
+            <b>华为</b>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- 头部 end -->
+
+    <!-- 登录 start -->
+    <section id="main">
+      <div class="title">华为帐号登录</div>
+      <div class="content">
+        <div class="left">
+          <div class="img_box">
+            <img
+              src="https://warehouse-1309123434.cos.ap-chengdu.myqcloud.com/huawei/VMALL/%E4%BA%BA%E5%91%98%E5%AE%9E%E5%90%8D%E4%BF%A1%E6%81%AF.png"
+              alt=""
+            />
+          </div>
+          <p>若您使用华为手机，请进入“设置”>“华为帐号”扫码登录。</p>
+        </div>
+        <div class="center"></div>
+        <div class="right">
+          <p class="un">
+            <input
+              type="text"
+              id="username"
+              placeholder="手机号/邮件地址/华为号"
+            />
+          </p>
+          <div class="error">请输入您的密码!</div>
+
+          <p class="pword">
+            <input type="password" id="password" placeholder="密码" /><i
+              class="iconfont icon-biyan"
+            ></i>
+          </p>
+          <div class="message">
+            <a href="#">短信验证码登录</a>
+          </div>
+          <button class="btn" id="login">登录</button>
+          <p class="link">
+            <span><a href="./register.html">注册</a><em></em></span>
+            <span
+              ><a href="JavaScript:alert('这都能忘?')">忘记密码</a><em></em
+            ></span>
+            <span><a href="JavaScript:alert('自己想')">遇到问题</a></span>
+          </p>
+          <p class="icons">
+            <a href="JavaScript:alert('经费有限,暂不支持')" class="qq"
+              ><i class="iconfont icon-qq"></i
+            ></a>
+            <a href="JavaScript:alert('经费有限,暂不支持')" class="zfb"
+              ><i class="iconfont icon-zhifubao"></i
+            ></a>
+            <a href="JavaScript:alert('经费有限,暂不支持')" class="wx"
+              ><i class="iconfont icon-iconfontweixin"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- 登录 end -->
+
+    <!-- 底部 start -->
+    <footer id="footer" class="clearfix">
+      <div class="f_inner">
+        <p
+          style="text-align: center; line-height: 20px; height: 20px"
+          class="top"
+        >
+          <a href="JavaScript:;">华为帐号用户协议</a>
+          <em class="foot_em">|</em>
+          <a href="JavaScript:;">关于华为帐号与隐私的声明</a>
+          <span><em class="foot_em">|</em> <a href="#">常见问题</a></span>
+          <em class="foot_em">|</em>
+          <a href="JavaScript:;">Cookies</a>
+        </p>
+      </div>
+    </footer>
+    <!-- 底部start -->
+  </body>
+</html>
+<script src="../libs/jquery-3.6.0.js"></script>
+<script src="../utils/tool.js"></script>
+<script src="../js/login.js"></script>
