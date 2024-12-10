@@ -67,42 +67,43 @@ $(function () {
 
     $('.btn').click(function () {
         if (index) {
-            $.ajax({
-                url: "http://124.222.220.114:9010/server/user/login",
-                method: 'POST',
-                dataType: 'json',
-                data: {
-                    userAccount: $('#username').val(),
-                    userPassword: $('#password').val()
-                },
-                success: function (res) {
-                    if (res.code == 200) {
-                        document.cookie = 'username=' + $('#username').val();
-                        location.href = './mall.html';
-                    } else if (res.code !== 200) {
-                        alert('登陆失败，帐号或密码错误，请重新登录');
-                        $('#username').val('');
-                        $('#password').val('');
-                        deng()
-                    }
-                }
-            })
+            // $.ajax({
+            //     url: "http://124.222.220.114:9010/server/user/login",
+            //     method: 'POST',
+            //     dataType: 'json',
+            //     data: {
+            //         userAccount: $('#username').val(),
+            //         userPassword: $('#password').val()
+            //     },
+            //     success: function (res) {
+            //         if (res.code == 200) {
+            //             document.cookie = 'username=' + $('#username').val();
+            //             location.href = './index.html';
+            //         } else if (res.code !== 200) {
+            //             alert('登陆失败，帐号或密码错误，请重新登录');
+            //             $('#username').val('');
+            //             $('#password').val('');
+            //             deng()
+            //         }
+            //     }
+            // })
 
             // 登录信息存到本地存储
-            // let userInfo = localStorage.getItem("userInfo")
-            // let noUserInfo = JSON.parse(userInfo)
-            // if (noUserInfo.username === $('#username').val() && noUserInfo.password === $('#password').val()) {
-            //     document.cookie = "username=" + $("#username").val()
-            //     location.href = './mall.html';
-            // }
-            // else if ($('#username').val() === "admin" && $('#password').val() === "123456") {
-            //     location.href = './mall.html';
-            // }
-            // else {
-            //     alert('登陆失败，帐号或密码错误，请重新登录');
-            //     $('#username').val('');
-            //     $('#password').val('');
-            // }
+            let userInfo = localStorage.getItem("userInfo")
+            let noUserInfo = JSON.parse(userInfo)
+            if (noUserInfo.username === $('#username').val() && noUserInfo.password === $('#password').val()) {
+                document.cookie = "username=" + $("#username").val()
+                location.href = './index.html';
+            }
+            else if ($('#username').val() === "admin" && $('#password').val() === "123456") {
+                document.cookie = "username=" + $("#username").val()
+                location.href = './index.html';
+            }
+            else {
+                alert('登陆失败，帐号或密码错误，请重新登录');
+                $('#username').val('');
+                $('#password').val('');
+            }
             console.log(document.cookie)
         }
     })

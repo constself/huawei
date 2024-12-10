@@ -176,32 +176,32 @@ $(function () {
     }
     $('.btn').click(function () {
         if (index) {
-            $.ajax({
-                url: "http://124.222.220.114:9010/server/user/register",
-                method: "POST",
-                dataType: 'json',
-                data: {
-                    userAccount: $('#username').val(),
-                    userPassword: $('#password').val(),
-                    checkPassword: $("#checkPassword").val()
-                },
-                success: function (res) {
-                    if (res.code == 200) {
-                        location.href = './login.html';
-                    }
-                    else {
-                        alert(res.msg)
-                    }
-                }
+            // $.ajax({
+            //     url: "http://124.222.220.114:9010/server/user/register",
+            //     method: "POST",
+            //     dataType: 'json',
+            //     data: {
+            //         userAccount: $('#username').val(),
+            //         userPassword: $('#password').val(),
+            //         checkPassword: $("#checkPassword").val()
+            //     },
+            //     success: function (res) {
+            //         if (res.code == 200) {
+            //             location.href = './login.html';
+            //         }
+            //         else {
+            //             alert(res.msg)
+            //         }
+            //     }
 
-            })
-
+            // })
+            const userInfo = {}
             // 读取本地存储
-            // userInfo.username = $('#username').val()
-            // userInfo.password = $('#password').val()
-            // let infoJSONString = JSON.stringify(userInfo)
-            // localStorage.setItem("userInfo", infoJSONString)
-            // location.href = './login.html';
+            userInfo.username = $('#username').val()
+            userInfo.password = $('#password').val()
+            let infoJSONString = JSON.stringify(userInfo)
+            localStorage.setItem("userInfo", infoJSONString)
+            location.href = './login.html';
         } else {
             alert("您输入的信息有误")
         }

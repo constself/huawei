@@ -42,7 +42,7 @@ if (getCookie("username")) {
     if (!cartItem2) {
         console.log(1)
         $('.products').hide().siblings('.empty').show();
-        $('.empty p').text('您的购物车是空的哦~').next().prop("href", "../pages/mall.html").text('去添加')
+        $('.empty p').text('您的购物车是空的哦~').next().prop("href", "../pages/index.html").text('去添加')
     }
 
 }
